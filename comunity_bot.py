@@ -8,7 +8,7 @@ import asyncio
 
 load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
-CHANNEL_ID = 1277521890608681001
+CHANNEL_ID = "ID_OF_CHANNEL"
 
 intents = discord.Intents.default()
 intents.message_content = True
