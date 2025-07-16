@@ -36,3 +36,64 @@ The bot is pre-configured to send the following reminders:
 ```bash
 git clone https://github.com/your-username/community-scheduler-bot.git
 cd community-scheduler-bot
+2️⃣ Install dependencies
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Dependencies include:
+
+discord.py
+
+apscheduler
+
+python-dotenv
+
+3️⃣ Create a .env file
+env
+Copy
+Edit
+DISCORD_TOKEN=your_discord_bot_token_here
+💡 Note: You can get your Discord bot token from the Discord Developer Portal.
+
+4️⃣ Configure channel ID
+Update the CHANNEL_ID variable in main.py to the ID of your target channel:
+
+python
+Copy
+Edit
+CHANNEL_ID = 1277521890608681001
+✅ Usage
+Start the bot
+bash
+Copy
+Edit
+python main.py
+When started, it will:
+
+Log in to Discord
+
+Start the scheduler
+
+Begin sending reminders automatically
+
+Available commands
+diff
+Copy
+Edit
+!check
+Replies with ✅ Bot works!
+
+🛡️ Permissions
+Make sure your bot has:
+
+Permission to read and send messages in the target channel.
+
+The Message Content Intent enabled in the Developer Portal.
+
+💬 Contributing
+Pull requests and improvements are welcome!
+Feel free to suggest new features or improve existing ones.
+
+⚡ License
+MIT License.
